@@ -1,0 +1,96 @@
+<html>
+<head>
+<title> Exercício 5: apresentar os caracteres de uma string e suas posições.
+</title>
+<script>
+var frase="Ola, tudo bem?";
+document.write(frase+"<br>");
+tamanho=frase.length;
+for (var i=0; i< tamanho;)
+{
+document.write("<br>Caractere na posição "+i+" : "+frase.charAt(i));
+i++;
+}
+document.write("<br><br>Primeiro caractere: " + frase.charAt(0) + "<br />");
+document.write("Último caractere: " + frase.charAt(frase.length-1));
+/*
+O método charAt() retorna o caractere da posição especificada da string (do
+índice especificado).
+*/
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head><title> Exercício 5.2: apresentar os caracteres de uma string e suas
+posições, lendo uma frase do teclado.</title>
+<script>
+var frase=window.prompt("digite uma frase: ");
+document.write(frase+"<br>");
+tamanho=frase.length;
+for (var i=0; i< tamanho;)
+{
+document.write("<br>Caractere na posição "+i+" : "+frase.charAt(i));
+i++;
+}
+document.write("<br><br>Primeiro caractere: " + frase.charAt(0) + "<br />");
+document.write("Último caractere: " + frase.charAt(frase.length-1));
+/*
+O método charAt() retorna o caractere da posição especificada da string (do
+índice especificado).
+*/
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<title> Exercício 6: apresentar a data em diversos formatos.</title>
+<script>
+hoje=new Date();
+document.write("Data e hora completa: "+hoje);
+document.write("<br>Apenas o dia: "+hoje.getDate());
+document.write("<br>Apenas o mês (0 a 11): "+hoje.getMonth());
+document.write("<br>Apenas o ano: "+hoje.getFullYear());
+document.write("<br>Apenas o dia da semana (0 a 6): "+hoje.getDay());
+document.write("<br>Apenas a hora e minutos:
+"+hoje.getHours()+":"+hoje.getMinutes());
+</script>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head><title> Exercício 7: apresenta três funções (botões) para trabalhar com
+janelas.</title>
+<script>
+function abre1()
+{
+window.open("http://www.google.com");
+}
+function abre2()
+{
+window.open("http://www.google.com","simples","width=350,height=400");
+}
+function abre3()
+{
+window.open("http://www.google.com","simples","menubar,scrollbars,width=300,
+height=200");
+}
+</script>
+</head>
+<body>
+<form>
+Dê um clique no botão para abrir uma janela simples:
+<input type="button" name="abrir" value="Janela1" onClick="abre1()"><br><br>
+Dê um clique no botão para abrir uma janela de 350px de largura por 400px de
+altura, sem barras e menus:
+<input type="button" name="abrir" value="Janela2" onClick="abre2()"><br><br>
+Dê um clique no botão para abrir uma janela com menu e barra de rolagens,
+mas sem barra de endereço e barra padrão:
+<input type="button" name="abrir" value="Janela3" onClick="abre3()"><br><br>
+</form>
+</body>
+</html>
